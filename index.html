@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID-19</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css"/>
+    <link rel="stylesheet" href="styleme.css" />
+  </head>
+  <body>
+    <h1>COVID-19 STAT-UPDATER</h1>
+    <div class="container">
+      <div class="row">
+        <div class="parent">
+          <div class="global">
+            <span>New Confirm</span><span id="newconfirmed"></span>
+          </div>
+          <div class="global">
+            <span>Total Confirm</span><span id="totalconfirm"></span>
+          </div>
+          <div class="global">
+            <span>New Deaths</span><span id="newdeaths"></span>
+          </div>
+          <div class="global">
+            <span>Total Deaths</span><span id="totaldeaths"></span>
+          </div>
+          <div class="global">
+            <span>New Recovered</span><span id="newrecovered"></span>
+          </div>
+          <div class="global">
+            <span>Total Recovered</span><span id="totalrecovered"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table id="example" class="table table-dark table-striped-columns" style="width: 100%">
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Country Code</th>
+          <th>Slug</th>
+          <th>New Confirmed</th>
+          <th>Total Confirmed</th>
+          <th>New Deaths</th>
+          <th>Total Deaths</th>
+          <th>Total Recovered</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+
+    <script src="fetcher.js"></script>
+  </body>
+</html>

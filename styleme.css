@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+    margin: 40px;
+    }
+
+.global{
+    background-color: #003249;
+    height: 150px;
+    width: 300px;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    margin-left: -40px;
+}
+
+.global span{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 1.5rem;
+}
